@@ -1,0 +1,138 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #cdd4e67b;
+  /* background: #61dafb; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.App .container {
+  height: 70%;
+  width: 50%;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.App .container .centralizer {
+  height: 50%;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.App .centralizer div {
+  flex: 0.3;
+  background-color: white;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 20px;
+  border-radius: 20px;
+  border: solid rgb(126, 184, 231);
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+.App .centralizer div:nth-child(odd) {
+  height: 27vmin;
+  flex: 0.25;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.header-bar {
+  height: 100px;
+  width: 100%;
+  background-color: #f5af18c2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.snack-bar {
+  height: 40px;
+  width: 100%;
+  background-color: #f5af18c2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.snack-bar p {
+  font-size: 1.6rem;
+  font-family: "Encode", sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
